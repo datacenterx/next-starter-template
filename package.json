@@ -1,6 +1,6 @@
 {
-  "name": "next-starter-template",
-  "description": "Build a full-stack web application with Next.js.",
+  "name": "softserve-pro",
+  "description": "Software service provider platform offering POS systems and business solutions.",
   "private": true,
   "cloudflare": {
     "label": "Next.js Framework Starter",
