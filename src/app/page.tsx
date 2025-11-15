@@ -1,5 +1,6 @@
 import Link from "next/link";
-import Logo from "./components/Logo";
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 
 const services = [
   {
@@ -27,34 +28,7 @@ const services = [
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
-      <nav className="border-b border-gray-200 dark:border-gray-700 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16 items-center">
-            <div className="flex items-center">
-              <Link href="/" className="flex items-center hover:opacity-80 transition">
-                <Logo className="h-10 w-auto" />
-              </Link>
-            </div>
-            <div className="hidden md:flex space-x-8">
-              <Link href="#services" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                Services
-              </Link>
-              <Link href="#about" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                About
-              </Link>
-              <Link href="#contact" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                Contact
-              </Link>
-            </div>
-            <Link
-              href="#contact"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition"
-            >
-              Get Started
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32">
@@ -68,13 +42,13 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="#contact"
+              href="/contact"
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition shadow-lg hover:shadow-xl"
             >
               Request a Demo
             </Link>
             <Link
-              href="#services"
+              href="/services"
               className="bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-600 hover:border-blue-600 dark:hover:border-blue-400 text-gray-900 dark:text-white px-8 py-4 rounded-lg text-lg font-semibold transition"
             >
               View Services
@@ -84,7 +58,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="bg-white dark:bg-gray-900 py-20">
+      <section className="bg-white dark:bg-gray-900 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -122,8 +96,89 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Testimonials Section */}
+      <section className="py-20 bg-gray-50 dark:bg-gray-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              What Our Clients Say
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+              Don't just take our word for it. Here's what our satisfied clients have to say about working with us.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
+              <div className="flex items-center mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-600 dark:text-gray-300 mb-6">
+                "The POS system from SoftServe Pro transformed our retail operations. Sales tracking is seamless, and customer checkout is faster than ever. Highly recommended!"
+              </p>
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">
+                  JD
+                </div>
+                <div className="ml-4">
+                  <h4 className="font-semibold text-gray-900 dark:text-white">John Davis</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">CEO, RetailMax</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
+              <div className="flex items-center mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-600 dark:text-gray-300 mb-6">
+                "Working with SoftServe Pro was a game-changer for our business. Their custom software solution perfectly fits our needs and their support team is outstanding."
+              </p>
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold">
+                  SC
+                </div>
+                <div className="ml-4">
+                  <h4 className="font-semibold text-gray-900 dark:text-white">Sarah Chen</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Founder, TechStart</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
+              <div className="flex items-center mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-600 dark:text-gray-300 mb-6">
+                "Our e-commerce platform built by SoftServe Pro exceeded all expectations. Sales increased by 40% in the first quarter. Incredible team and results!"
+              </p>
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold">
+                  MR
+                </div>
+                <div className="ml-4">
+                  <h4 className="font-semibold text-gray-900 dark:text-white">Michael Roberts</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Director, ShopNow</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact/Lead Form Section */}
-      <section id="contact" className="py-20 bg-gradient-to-br from-blue-600 to-blue-800">
+      <section className="py-20 bg-gradient-to-br from-blue-600 to-blue-800">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
@@ -218,48 +273,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <Logo className="h-8 w-auto mb-4" />
-              <p className="text-gray-400">
-                Empowering businesses with innovative software solutions.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Services</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><Link href="#services" className="hover:text-blue-400 transition">POS Systems</Link></li>
-                <li><Link href="#services" className="hover:text-blue-400 transition">Business Management</Link></li>
-                <li><Link href="#services" className="hover:text-blue-400 transition">E-commerce</Link></li>
-                <li><Link href="#services" className="hover:text-blue-400 transition">Custom Software</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Company</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><Link href="#about" className="hover:text-blue-400 transition">About Us</Link></li>
-                <li><Link href="#contact" className="hover:text-blue-400 transition">Contact</Link></li>
-                <li><Link href="#" className="hover:text-blue-400 transition">Careers</Link></li>
-                <li><Link href="#" className="hover:text-blue-400 transition">Blog</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Legal</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><Link href="#" className="hover:text-blue-400 transition">Privacy Policy</Link></li>
-                <li><Link href="#" className="hover:text-blue-400 transition">Terms of Service</Link></li>
-                <li><Link href="#" className="hover:text-blue-400 transition">Cookie Policy</Link></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 SoftServe Pro. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
