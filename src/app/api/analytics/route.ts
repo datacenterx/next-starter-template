@@ -3,7 +3,7 @@ import { prisma } from '@/lib/prisma';
 
 export async function POST(request: NextRequest) {
   try {
-    const body = await request.json();
+    const body = await request.json() as { page: string; referrer?: string; userAgent?: string };
     const { page, referrer, userAgent } = body;
 
     const pageView = await prisma.pageView.create({
@@ -44,13 +44,13 @@ export async function GET(request: NextRequest) {
     });
 
     // Group by page
-    const pageStats = pageViews.reduce((acc: any, view) => {
+    const pageStats = pageViews.reduce((acc: Record<string, number>, view) => {
       if (!acc[view.page]) {
         acc[view.page] = 0;
       }
       acc[view.page]++;
       return acc;
-    }, {});
+    }, {} as Record<string, number>);
 
     return NextResponse.json({
       totalViews: pageViews.length,

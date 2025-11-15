@@ -76,10 +76,10 @@ export default function AboutPage() {
               Founded in 2015, SoftServe Pro began with a simple mission: to help businesses leverage technology to achieve their goals. What started as a small team of passionate developers has grown into a full-service software solutions provider.
             </p>
             <p>
-              Over the years, we've helped hundreds of businesses transform their operations through innovative software solutions. From retail stores implementing their first POS system to enterprises building custom platforms, we've been there every step of the way.
+              Over the years, we&apos;ve helped hundreds of businesses transform their operations through innovative software solutions. From retail stores implementing their first POS system to enterprises building custom platforms, we&apos;ve been there every step of the way.
             </p>
             <p>
-              Today, we're proud to serve clients across various industries, providing everything from point-of-sale systems to custom enterprise solutions. Our team of experienced developers, designers, and support specialists work together to deliver solutions that not only meet but exceed our clients' expectations.
+              Today, we&apos;re proud to serve clients across various industries, providing everything from point-of-sale systems to custom enterprise solutions. Our team of experienced developers, designers, and support specialists work together to deliver solutions that not only meet but exceed our clients&apos; expectations.
             </p>
           </div>
         </div>
@@ -116,12 +116,12 @@ export default function AboutPage() {
             Our Team
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 text-center max-w-3xl mx-auto mb-12">
-            We're a diverse team of developers, designers, project managers, and support specialists united by a passion for technology and helping businesses succeed.
+            We&apos;re a diverse team of developers, designers, project managers, and support specialists united by a passion for technology and helping businesses succeed.
           </p>
           <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-12 text-center text-white">
             <h3 className="text-2xl font-bold mb-4">Join Our Team</h3>
             <p className="text-blue-100 mb-6">
-              We're always looking for talented individuals to join our growing team.
+              We&apos;re always looking for talented individuals to join our growing team.
             </p>
             <Link
               href="/contact"
@@ -137,7 +137,7 @@ export default function AboutPage() {
       <section className="bg-white dark:bg-gray-900 py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-            Let's Work Together
+            Let&apos;s Work Together
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
             Ready to take your business to the next level? Get in touch with us today.

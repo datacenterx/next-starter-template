@@ -104,7 +104,7 @@ export default function Home() {
               What Our Clients Say
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Don't just take our word for it. Here's what our satisfied clients have to say about working with us.
+              Don&apos;t just take our word for it. Here&apos;s what our satisfied clients have to say about working with us.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -117,7 +117,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-gray-600 dark:text-gray-300 mb-6">
-                "The POS system from SoftServe Pro transformed our retail operations. Sales tracking is seamless, and customer checkout is faster than ever. Highly recommended!"
+                &quot;The POS system from SoftServe Pro transformed our retail operations. Sales tracking is seamless, and customer checkout is faster than ever. Highly recommended!&quot;
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">
@@ -139,7 +139,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-gray-600 dark:text-gray-300 mb-6">
-                "Working with SoftServe Pro was a game-changer for our business. Their custom software solution perfectly fits our needs and their support team is outstanding."
+                &quot;Working with SoftServe Pro was a game-changer for our business. Their custom software solution perfectly fits our needs and their support team is outstanding.&quot;
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold">
@@ -161,7 +161,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-gray-600 dark:text-gray-300 mb-6">
-                "Our e-commerce platform built by SoftServe Pro exceeded all expectations. Sales increased by 40% in the first quarter. Incredible team and results!"
+                &quot;Our e-commerce platform built by SoftServe Pro exceeded all expectations. Sales increased by 40% in the first quarter. Incredible team and results!&quot;
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold">

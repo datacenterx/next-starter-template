@@ -3,7 +3,7 @@ import { prisma } from '@/lib/prisma';
 
 export async function POST(request: NextRequest) {
   try {
-    const body = await request.json();
+    const body = await request.json() as { name: string; email: string; company: string; service: string; message?: string };
     const { name, email, company, service, message } = body;
 
     // Validate required fields

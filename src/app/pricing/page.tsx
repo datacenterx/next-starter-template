@@ -84,7 +84,7 @@ export default function PricingPage() {
               Simple, Transparent Pricing
             </h1>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              Choose the plan that's right for your business. All plans include core features with no hidden fees.
+              Choose the plan that&apos;s right for your business. All plans include core features with no hidden fees.
             </p>
           </div>
         </div>
@@ -199,7 +199,7 @@ export default function PricingPage() {
               Frequently Asked Questions
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              Have questions? We've got answers.
+              Have questions? We&apos;ve got answers.
             </p>
           </div>
           <div className="space-y-6">
@@ -232,7 +232,7 @@ export default function PricingPage() {
                 Do you offer refunds?
               </h3>
               <p className="text-gray-600 dark:text-gray-300">
-                We offer a 30-day money-back guarantee on all plans. If you're not satisfied, contact us for a full refund within the first 30 days.
+                We offer a 30-day money-back guarantee on all plans. If you&apos;re not satisfied, contact us for a full refund within the first 30 days.
               </p>
             </div>
             <div className="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700">

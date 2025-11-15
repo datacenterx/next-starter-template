@@ -79,7 +79,7 @@ export default function CaseStudiesPage() {
               Success Stories
             </h1>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              See how we've helped businesses like yours achieve remarkable results with our software solutions.
+              See how we&apos;ve helped businesses like yours achieve remarkable results with our software solutions.
             </p>
           </div>
         </div>
@@ -107,7 +107,7 @@ export default function CaseStudiesPage() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-20">
-            {caseStudies.map((study, index) => (
+            {caseStudies.map((study) => (
               <div
                 key={study.id}
                 className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 overflow-hidden"
@@ -177,7 +177,7 @@ export default function CaseStudiesPage() {
                     
                     <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                       <p className="text-lg italic mb-4">
-                        "{study.testimonial}"
+                        &quot;{study.testimonial}&quot;
                       </p>
                       <p className="font-semibold">
                         — {study.author}
@@ -198,7 +198,7 @@ export default function CaseStudiesPage() {
             Ready to Write Your Success Story?
           </h2>
           <p className="text-xl text-blue-100 mb-8">
-            Let's discuss how our solutions can help your business achieve similar results.
+            Let&apos;s discuss how our solutions can help your business achieve similar results.
           </p>
           <Link
             href="/contact"
